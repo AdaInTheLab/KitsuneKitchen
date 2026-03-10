@@ -87,4 +87,4 @@ KitsuneKitchen/
 
 ---
 
-Made with love by [KitsuneDen](https://github.com/KitsuneDen)
+Made with 💚 by KitsuneDen 🦊
