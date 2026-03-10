@@ -1,0 +1,105 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Food_Stuffed_Aubergine.name",
+    "Description": "server.items.Food_Stuffed_Aubergine.description"
+  },
+  "Parent": "Template_Food",
+  "Interactions": {
+    "Secondary": "Root_Secondary_Consume_Food_T3"
+  },
+  "Quality": "Rare",
+  "Icon": "Icons/ItemsGenerated/Food_Stuffed_Aubergine.png",
+  "BlockType": {
+    "Material": "Empty",
+    "DrawType": "Model",
+    "Opacity": "Semitransparent",
+    "CustomModel": "Items/Consumables/Food/Bread.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Items/Consumables/Food/Bread_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "HitboxType": "Food_Medium",
+    "RandomRotation": "YawStep1",
+    "Gathering": {
+      "Harvest": {},
+      "Soft": {}
+    },
+    "CustomModelScale": 0.5,
+    "BlockParticleSetId": "Dust",
+    "ParticleColor": "#6b3fa0"
+  },
+  "InteractionVars": {
+    "Consume_Charge": {
+      "Interactions": [
+        {
+          "Parent": "Consume_Charge_Food_T3_Inner",
+          "Effects": {
+            "Particles": [
+              {
+                "SystemId": "Food_Eat",
+                "Color": "#6B3FA0",
+                "TargetNodeName": "Mouth",
+                "TargetEntityPart": "Entity"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "Effect": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "KK_Heal_T3"
+        },
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "KK_Buff_Spicy"
+        }
+      ]
+    }
+  },
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Plant_Crop_Aubergine_Item",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Plant_Crop_Rice_Item",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Food_Cheese",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Spices",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Plant_Crop_Tomato_Item",
+        "Quantity": 1
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "Food_Stuffed_Aubergine"
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Cookingbench",
+        "Categories": ["Prepared"]
+      }
+    ],
+    "KnowledgeRequired": true,
+    "TimeSeconds": 0
+  },
+  "ItemLevel": 10,
+  "MaxStack": 25,
+  "DropOnDeath": true
+}

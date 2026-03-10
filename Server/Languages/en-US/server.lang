@@ -1,0 +1,35 @@
+items.Food_Baked_Potato.name = Baked Potato
+items.Food_Baked_Potato.description = [TMP] Instantly restores <color is="#ffffff">5%</color> health.
+
+items.Food_Corn_Grilled.name = Grilled Corn
+items.Food_Corn_Grilled.description = [TMP] Instantly restores <color is="#ffffff">5%</color> health.
+
+items.Food_Egg_Fried.name = Fried Egg
+items.Food_Egg_Fried.description = [TMP] Instantly restores <color is="#ffffff">5%</color> health.
+
+items.Food_Fries.name = Fries
+items.Food_Fries.description = [TMP] Instantly restores <color is="#ffffff">10%</color> health.
+
+items.Food_Soup_Tomato.name = Tomato Soup
+items.Food_Soup_Tomato.description = [TMP] Instantly restores <color is="#ffffff">10%</color> health and grants:\n\n• <color is="#ffffff">Hearty</color> +10% Max Health, Health Regen\n\nDuration: <color is="#ffffff">15:00</color>
+
+items.Food_Soup_Mushroom.name = Mushroom Soup
+items.Food_Soup_Mushroom.description = [TMP] Instantly restores <color is="#ffffff">10%</color> health and grants:\n\n• <color is="#ffffff">Hearty</color> +10% Max Health, Health Regen\n\nDuration: <color is="#ffffff">15:00</color>
+
+items.Food_Stir_Fry.name = Veggie Stir Fry
+items.Food_Stir_Fry.description = [TMP] Instantly restores <color is="#ffffff">10%</color> health and grants:\n\n• <color is="#ffffff">Energized</color> +20% Max Stamina, Stamina Regen\n\nDuration: <color is="#ffffff">15:00</color>
+
+items.Food_Hamburger.name = Hamburger
+items.Food_Hamburger.description = [TMP] Instantly restores <color is="#ffffff">10%</color> health and grants:\n\n• <color is="#ffffff">Hearty</color> +10% Max Health, Health Regen\n\nDuration: <color is="#ffffff">15:00</color>
+
+items.Food_Steak_Baked_Potato.name = Steak & Baked Potato
+items.Food_Steak_Baked_Potato.description = [TMP] Instantly restores <color is="#ffffff">10%</color> health and grants:\n\n• <color is="#ffffff">Hearty</color> +10% Max Health, Health Regen\n\nDuration: <color is="#ffffff">15:00</color>
+
+items.Food_Kimchi.name = Kimchi
+items.Food_Kimchi.description = [TMP] Instantly restores <color is="#ffffff">15%</color> health and grants:\n\n• <color is="#ffffff">Spicy</color> +30% Max Stamina, Stamina Regen, Physical Resistance\n\nDuration: <color is="#ffffff">30:00</color>
+
+items.Food_Stuffed_Aubergine.name = Stuffed Aubergine
+items.Food_Stuffed_Aubergine.description = [TMP] Instantly restores <color is="#ffffff">15%</color> health and grants:\n\n• <color is="#ffffff">Spicy</color> +30% Max Stamina, Stamina Regen, Physical Resistance\n\nDuration: <color is="#ffffff">30:00</color>
+
+items.Food_Feast_Pie.name = Feast Pie
+items.Food_Feast_Pie.description = [TMP] Instantly restores <color is="#ffffff">15%</color> health and grants:\n\n• <color is="#ffffff">Feast</color> +20% Max Health, +15% Max Stamina, Regen, Damage Resistance\n\nDuration: <color is="#ffffff">45:00</color>

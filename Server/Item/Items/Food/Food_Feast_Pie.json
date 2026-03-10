@@ -1,0 +1,105 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Food_Feast_Pie.name",
+    "Description": "server.items.Food_Feast_Pie.description"
+  },
+  "Parent": "Template_Food",
+  "Interactions": {
+    "Secondary": "Root_Secondary_Consume_Food_T3"
+  },
+  "Quality": "Rare",
+  "Icon": "Icons/ItemsGenerated/Food_Feast_Pie.png",
+  "BlockType": {
+    "Material": "Empty",
+    "DrawType": "Model",
+    "Opacity": "Semitransparent",
+    "CustomModel": "Items/Consumables/Food/Bread.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Items/Consumables/Food/Bread_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "HitboxType": "Food_Medium",
+    "RandomRotation": "YawStep1",
+    "Gathering": {
+      "Harvest": {},
+      "Soft": {}
+    },
+    "CustomModelScale": 0.55,
+    "BlockParticleSetId": "Dust",
+    "ParticleColor": "#c8a050"
+  },
+  "InteractionVars": {
+    "Consume_Charge": {
+      "Interactions": [
+        {
+          "Parent": "Consume_Charge_Food_T3_Inner",
+          "Effects": {
+            "Particles": [
+              {
+                "SystemId": "Food_Eat",
+                "Color": "#C8A050",
+                "TargetNodeName": "Mouth",
+                "TargetEntityPart": "Entity"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "Effect": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "KK_Heal_T3"
+        },
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "KK_Buff_Feast"
+        }
+      ]
+    }
+  },
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Ingredient_Dough",
+        "Quantity": 2
+      },
+      {
+        "ResourceTypeId": "Meats",
+        "Quantity": 2
+      },
+      {
+        "ResourceTypeId": "Vegetables",
+        "Quantity": 2
+      },
+      {
+        "ItemId": "Food_Cheese",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Food_Egg",
+        "Quantity": 1
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "Food_Feast_Pie"
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Cookingbench",
+        "Categories": ["Baked"]
+      }
+    ],
+    "KnowledgeRequired": true,
+    "TimeSeconds": 5
+  },
+  "ItemLevel": 10,
+  "MaxStack": 25,
+  "DropOnDeath": true
+}

@@ -1,0 +1,40 @@
+{
+  "RawStatModifiers": {
+    "Health": [
+      {
+        "Amount": 1.20,
+        "CalculationType": "Multiplicative",
+        "Target": "Max"
+      }
+    ],
+    "Stamina": [
+      {
+        "Amount": 1.15,
+        "CalculationType": "Multiplicative",
+        "Target": "Max"
+      }
+    ]
+  },
+  "StatModifiers": {
+    "Health": 0.03,
+    "Stamina": 0.03
+  },
+  "DamageResistance": {
+    "Physical": [
+      {
+        "CalculationType": "Multiplicative",
+        "Amount": 0.08
+      }
+    ],
+    "Projectile": [
+      {
+        "CalculationType": "Multiplicative",
+        "Amount": 0.08
+      }
+    ]
+  },
+  "OverlapBehavior": "Overwrite",
+  "Duration": 2700,
+  "DamageCalculatorCooldown": 2,
+  "StatusEffectIcon": "UI/StatusEffects/AddHealth/Large.png"
+}

@@ -1,0 +1,100 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Food_Hamburger.name",
+    "Description": "server.items.Food_Hamburger.description"
+  },
+  "Parent": "Template_Food",
+  "Interactions": {
+    "Secondary": "Root_Secondary_Consume_Food_T2"
+  },
+  "Quality": "Uncommon",
+  "Icon": "Icons/ItemsGenerated/Food_Hamburger.png",
+  "BlockType": {
+    "Material": "Empty",
+    "DrawType": "Model",
+    "Opacity": "Semitransparent",
+    "CustomModel": "Items/Consumables/Food/Bread.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Items/Consumables/Food/Bread_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "HitboxType": "Food_Medium",
+    "RandomRotation": "YawStep1",
+    "Gathering": {
+      "Harvest": {},
+      "Soft": {}
+    },
+    "CustomModelScale": 0.5,
+    "BlockParticleSetId": "Dust",
+    "ParticleColor": "#8b6914"
+  },
+  "InteractionVars": {
+    "Consume_Charge": {
+      "Interactions": [
+        {
+          "Parent": "Consume_Charge_Food_T2_Inner",
+          "Effects": {
+            "Particles": [
+              {
+                "SystemId": "Food_Eat",
+                "Color": "#8B6914",
+                "TargetNodeName": "Mouth",
+                "TargetEntityPart": "Entity"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "Effect": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "KK_Heal_T2"
+        },
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "KK_Buff_Hearty"
+        }
+      ]
+    }
+  },
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Food_Bread",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Food_Beef_Raw",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Plant_Crop_Lettuce_Item",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Plant_Crop_Tomato_Item",
+        "Quantity": 1
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "Food_Hamburger"
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Cookingbench",
+        "Categories": ["Prepared"]
+      }
+    ],
+    "TimeSeconds": 0
+  },
+  "ItemLevel": 6,
+  "MaxStack": 25,
+  "DropOnDeath": true
+}
