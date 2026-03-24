@@ -96,7 +96,7 @@
         "Categories": ["Baked"]
       }
     ],
-    "KnowledgeRequired": true,
+    "KnowledgeRequired": false,
     "TimeSeconds": 5
   },
   "ItemLevel": 10,

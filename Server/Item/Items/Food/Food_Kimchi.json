@@ -96,7 +96,7 @@
         "Categories": ["Prepared"]
       }
     ],
-    "KnowledgeRequired": true,
+    "KnowledgeRequired": false,
     "TimeSeconds": 0
   },
   "ItemLevel": 10,
