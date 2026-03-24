@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.0.1 — Recipe Fix
+
+### Fixed
+- Feast Pie, Kimchi, and Stuffed Aubergine recipes are now available at the cooking bench without needing to be learned first
+
 ## v1.0.0 — Initial Release
 
 ### Added
