@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.1.0 — Update 4 Compatibility
+
+### Changed
+- Campfire recipes (Baked Potato, Grilled Corn, Fried Egg) now cook instantly, matching Update 4's instant campfire crafting
+
+### Compatibility
+- Verified compatible with Hytale Early Access Update 4
+
 ## v1.0.1 — Recipe Fix
 
 ### Fixed

@@ -65,7 +65,7 @@ game/
 
 ## Requirements
 
-- Hytale Early Access server
+- Hytale Early Access Update 4 or later
 - No other mods required — fully standalone
 
 ## Data Pack Structure
